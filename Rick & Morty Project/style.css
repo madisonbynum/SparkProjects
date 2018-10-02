@@ -1,0 +1,267 @@
+/* #region Header */
+/*Creates space between nav bar and top of the page */
+
+#space{
+    height: 95px;
+}
+/* #endregion Header- all pages */
+
+/* #region body- all pages */
+/*Background image and body layout */
+
+body{
+    margin: 0;
+    background-image: url(https://images.alphacoders.com/641/thumb-1920-641547.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500px;
+    height: 1012.5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* #endregion body */
+
+/* #region nav bar- all pages*/
+
+nav > ol {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    width:97vw;
+}
+
+nav li, nav ol {
+    padding: 15px;
+    margin: 15px 15px 0px 15px;
+    list-style: none;
+    font-size: 18pt;
+    color: white;
+}
+
+li{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+ a:link{
+    color: white;
+    text-decoration: none;
+ }
+
+ a:visited{
+    color: white;
+ }
+
+ a:hover{
+    color: #c0bad3;
+ }
+
+ a:active{
+    color: #c0bad3;  
+ }
+ /* #endregion navbar */
+
+/* #region background- all pages*/
+#content-background{
+    border-top: 5px solid white;
+    border-bottom: 2px solid white;
+    padding: 0;
+    width: 99vw;
+    height: 105vh;
+    margin: 0;
+    background:rgba(255, 255, 255, .5);
+}
+
+.title{
+    
+    font-size: 30pt;
+    text-align: center;
+    color: #290795;
+}
+/* #endregion background*/
+
+/* #region stat card-home page*/
+/* Start  of Character stat card Css*/
+
+#random-character-display{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.block {
+    display: flex;
+    height: 250px;
+    width: 416.67px;
+    margin: 50px;
+    margin-top: 10px;
+    background: #5800AC;
+    flex-grow: 1;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 2px #8808C3;
+    
+}
+.character-img-container{
+    width: 38%;
+    text-align: center;
+    
+}
+.character-stat-container{
+    display: flex;
+    width: 62%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+}
+.block-img{
+    max-height: 250px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ .text-container{
+    color: #DFB816;
+    font-size: 18px;
+    
+    
+ }
+ dl.text-container dt, dd {
+     display: inline;
+     overflow: scroll;
+     margin: 0;
+ }
+ /* #endregion stat card*/
+
+/* #region button-home page */
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.character-button{
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5%;
+    background: #290795;
+    color: #DF16CA;
+    border: 4px groove #B6AA2E;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+/* #endregion button home */
+
+/* #region searchbar - Character search page */
+#search-bar{
+        display: flex;
+        justify-content: center;
+}
+
+#search-input{
+        width: 400px;
+        height: 40px;
+        font-size: 20pt;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: rgba(41, 7, 149, .9);
+        color: #DF16CA;
+        border: 4px solid #B6AA2E;
+}
+
+#inquery-submit{
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:#290795;
+    color: #DF16CA;
+    border-top: 4px solid #B6AA2E;
+    border-right: 4px solid #B6AA2E;
+    border-bottom: 4px solid #B6AA2E;
+    border-left: 0;
+
+}
+/* #endregion */
+
+/* #region search result section and search error */
+
+#search-result-section{
+   display: flex;
+   justify-content: center;
+   padding-right: 340px;
+   padding-left: 340px;
+   margin: 40px;
+   
+}
+
+h4{
+    margin: 50px;
+    font-size: 24pt;
+    background: rgba(88, 0, 172, .9);
+    color: #DF16CA;
+    padding: 50px;
+    border: 4px solid #B6AA2E;
+
+}
+
+/* #endregion */
+    
+.about-img1{
+    float: right;
+    /* height: 225px; */
+}
+.about-img2{
+    float: right;
+    /* height: 225px; */
+}
+.about-img3{
+    float: right;
+    height: 200px;
+}
+
+.text-float-right{
+    float:right;
+}
+
+h2{
+    color: #DF16CA;
+    font-size: 28pt;
+    border: 1px solid black;
+    margin: 0;
+}
+
+h3{
+    color: #DF16CA;
+    font-size: 26pt;
+}
+
+p{
+    color: #5800AC;
+    font-size: 20pt;
+    width: 80%
+}
+.about-text-img-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    clear: bottom;
+}
+.about-container{
+    border: 1px solid black;
+    display: flex;
+}
+.second-creator{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
