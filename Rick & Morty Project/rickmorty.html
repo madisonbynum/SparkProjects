@@ -5,31 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rick and Morty - Home</title>
+    <!-- stylesheet link -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+        <!-- space between nav bar and the top of the page -->
     <h1 id="space"></h1>
+
+    <!-- start of the nav bar -->
      <nav>
+             <!-- the whole nav bar is listed with one list of li -->
         <ol>
-                <li><a href="./rickmorty.html">Home</a></li>
+                <!-- found in rickmorty.html -->
+                <li><a href="./rickmorty.html">Randomizer</a></li>
+                <!-- found in about.html -->
                 <li><a href="./about.html">About</a></li>
-                <li><a href="./charactersearch.html">Character Search</a></li>
+                <!-- found in characterSearch.html -->
+                <li><a href="./charactersearch.html">Search</a></li>
         </ol>
      </nav>
+     <!-- end of nav bar -->
 
+     <!-- Start of the content background of the page -->
      <div id="content-background">
 
+                <!-- Large title at the top of content background -->
             <h1 class="title">Random Characters</h1>
+            <!-- space between title and random-character-display 
+                block display is flex -->
             <br>
 
+            <!-- Start of the content on randomizer page
+            holds all 4 the character cards -->
             <div id="random-character-display">
 
+                <!-- Section of card 1 on top left of random-character-display -->
                 <section class="block">
+                        
 
+                        <!-- div for the image on card one -->
+                        <!-- I realize now that i didnt need a seperate div for 
+                        the image -->
                         <div id="character-img1" class="character-img-container">
-                                <img class="block-img" src="https://rickandmortyapi.com/api/character/avatar/292.jpeg" alt="Rick and Morty Character">
+                                <img class="block-img" src="https://s7d9.scene7.com/is/image/zumiez/pdp_hero/Primitive-x-Rick-and-Morty-CNC-9.75%26quot%3B-Cruiser-Deck--_301295.jpg" alt="Rick and Morty Character">
                         </div>
+
+                        <!-- character-stat-container is the parent container for
+                        text container, display is flex -->
                         <div class="character-stat-container">
+
+                                <!-- text-container is the inside box of character-stat-container 
+                                The child container is better able to center if there is a 
+                                parent container -->
+                        <!-- text container is seperated in dl so that the styling doesnt
+                        interfere with the styling of nav bar -->
                             <dl class="text-container">
                                 <dt>Character Name: </dt><dd id="character-name1">Rick Sanchez</dd>
                                 <br>
@@ -55,10 +84,12 @@
                             </dl>
                         </div>
                 </section>
+
+                <!-- second character card top right of randomizing page -->
                 <section class="block">
 
                         <div id="character-img2" class="character-img-container">
-                                <img class="block-img" src="https://rickandmortyapi.com/api/character/avatar/292.jpeg" alt="something">
+                                <img class="block-img" src="https://s7d9.scene7.com/is/image/zumiez/pdp_hero/Primitive-x-Rick-and-Morty-CNC-9.75%26quot%3B-Cruiser-Deck--_301295.jpg" alt="something">
                         </div>
                         <div class="character-stat-container">
                                 <dl class="text-container">
@@ -87,10 +118,12 @@
                                 </div>
 
                 </section>
+
+                <!-- character card on bottom left of random character -->
                 <section class="block">
 
                         <div id="character-img3" class="character-img-container">
-                                <img class="block-img" src="https://rickandmortyapi.com/api/character/avatar/292.jpeg" alt="something">
+                                <img class="block-img" src="https://s7d9.scene7.com/is/image/zumiez/pdp_hero/Primitive-x-Rick-and-Morty-CNC-9.75%26quot%3B-Cruiser-Deck--_301295.jpg" alt="something">
                         </div>
                         <div class="character-stat-container">
                                 <dl class="text-container">
@@ -119,10 +152,11 @@
                                 </div>
 
                 </section>
+                <!-- 4th character card on bottom right of randomizer -->
                 <section class="block">
 
                         <div id="character-img4" class="character-img-container">
-                                <img class="block-img" src="https://rickandmortyapi.com/api/character/avatar/292.jpeg" alt="something">
+                                <img class="block-img" src="https://s7d9.scene7.com/is/image/zumiez/pdp_hero/Primitive-x-Rick-and-Morty-CNC-9.75%26quot%3B-Cruiser-Deck--_301295.jpg" alt="something">
                         </div>
                         <div class="character-stat-container">
                                 <dl class="text-container">
@@ -151,11 +185,14 @@
                                 </div>
                 </section>
             </div>
+            <!-- randomizer button -->
                 <div class="button-container">
-                 <button id="more-characters" class="character-button">More Characters</button>
+                 <button id="more-characters" class="character-button">Randomize</button>
                 </div>
         </div>
-
+<!-- 
+        js randomizer script tag - contains the api call and 
+randomizer functions as well as loading information into blocks -->
           <script src="./homepage.js"></script>
 </body>
 </html>

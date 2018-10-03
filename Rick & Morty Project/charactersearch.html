@@ -5,35 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rick and Morty - Character Search</title>
+     <!-- stylesheet link -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+         <!-- space between nav bar and the top of the page -->
         <h1 id="space"></h1>
-        <nav>   
+
+          <!-- start of the nav bar -->
+        <nav>
+        <!-- the whole nav bar is listed with one list of li -->   
                 <ol>
-                        <li><a href="./rickmorty.html">Home</a></li>
+                         <!-- found in rickmorty.html -->
+                        <li><a href="./rickmorty.html">Randomizer</a></li>
+                        <!-- found in about.html -->
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="./charactersearch.html">Character Search</a></li>
+                         <!-- found in characterSearch.html -->
+                        <li><a href="./charactersearch.html">Search</a></li>
                 </ol>
         </nav>
+        <!-- end of nav bar -->
 
+          <!-- Start of the content background of the page -->
         <div id="content-background">
+                 <!-- Large title at the top of content background -->
                 <h1 class="title">Character Search</h1>
                 <br>
-
+                
+                <!-- section containing input of searchbar and the submit button -->
                 <section id="search-bar">
                         <input type="text" id="search-input" name="search"> 
                         <button id="inquery-submit" onclick= getCharacterUsingAsync() on> Search </button>
                 </section>
                 
+                <!-- section that displays the results of the searchbar -->
                 <div id="search-result-section">
                                      
-                        
+                <!-- The rest of the HTML code is inside ./search.js 
+                as innerHTML   -->
                 </div>
 
         </div>
-        
-        
+<!--         
+        script that contains the api request, search bar processor
+        and createelements of the search result -->
         <script src="./search.js"></script>
     
 </body>
